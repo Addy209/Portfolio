@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.div {
+  background-color: #000b76;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  font-family: "Righteous", cursive;
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 3vw 0 3vw;
+}
+
+.hero {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.rightsidediv {
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 750px) {
+  .herodiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    width: 100%;
+    text-align: center;
+    height: 80vh;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: xx-large;
+  padding-right: 3vw;
+}
+
+.righthead {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  margin-left: 1.5vw;
+  cursor: pointer;
+}
+
+.herodiv {
+  display: flex;
+  justify-content: space-evenly;
+}
