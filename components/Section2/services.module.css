@@ -3,6 +3,7 @@
 .servicelayout {
   position: relative;
   height: 100vh;
+  margin-top: 1vh;
 }
 
 .service {
@@ -26,7 +27,14 @@
 .box {
   box-shadow: 5px 10px #888888;
   width: 33%;
+  transform: skew(5deg, 5deg);
+  border: 1px solid #888888;
 }
+
+/* .box:hover {
+  transform: scale(1.05);
+  z-index: 50;
+} */
 
 .badge {
   display: flex;
@@ -35,7 +43,7 @@
   margin-top: 2vh;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
   .service {
     flex-direction: column;
   }
@@ -47,5 +55,6 @@
   .box {
     box-shadow: 0 0;
     width: 100%;
+    transform: skew(0deg, 0deg);
   }
 }
