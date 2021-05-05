@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
-import { AspectRatio } from "@chakra-ui/react";
+import { AspectRatio, Image } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Social from "./social";
 
@@ -11,7 +11,12 @@ const RightSide = () => {
       {isLessThan750px ? null : (
         <div className={styles.rightsidediv}>
           <div>
-            <img src="./Web Developer_Isometric.svg" />
+            <Image
+              src="./Web Developer_Isometric.svg"
+              layout="fill"
+              quality={100}
+              draggable={false}
+            />
           </div>
         </div>
       )}

@@ -9,9 +9,16 @@ const ServiceCard = (props) => {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
+      bg={props.bg}
       className={styles.box}
     >
-      <Image src={props.img} alt={"svg"} className={styles.image} />
+      <Image
+        src={props.img}
+        alt={"svg"}
+        className={styles.image}
+        layout="fill"
+        draggable={false}
+      />
       <Box className={styles.badge}>
         <Badge borderRadius="full" px="2" colorScheme={props.colorscheme}>
           {props.badge}
