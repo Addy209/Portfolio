@@ -3,10 +3,12 @@ import { Text } from "@chakra-ui/react";
 import styles from "./Section2/services.module.css";
 
 const Heading = (props) => {
+  let color = props?.color ?? "#000b76";
+  const gradient = `linear(to-l, ${color},${color})`;
   return (
     <div className={styles.head}>
       <Text
-        bgGradient="linear(to-l, #000b76,#000b76)"
+        bgGradient={gradient}
         bgClip="text"
         fontSize="4xl"
         fontWeight="extrabold"

@@ -61,4 +61,7 @@
     transform: skew(0deg, 0deg);
     border: none;
   }
+  .servicelayout {
+    height: fit-content;
+  }
 }

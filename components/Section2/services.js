@@ -4,7 +4,7 @@ import ServiceCard from "./servicecard";
 import Heading from "../heading";
 const data = [
   {
-    img: "./undraw_static_website_0107.svg",
+    img: "./undraw_static_assets_rpm6.svg",
     colorscheme: "teal",
     bg: "rgba(255, 99, 132, 0.2)",
     badge: "Value for Money",
@@ -38,12 +38,12 @@ const Services = () => {
         {data.map((val, index) => {
           return (
             <ServiceCard
-              img={val.img}
-              colorscheme={val.colorscheme}
-              bg={val.bg}
-              badge={val.badge}
-              heading={val.heading}
-              content={val.content}
+              img={val?.img}
+              colorscheme={val?.colorscheme}
+              bg={val?.bg}
+              badge={val?.badge}
+              heading={val?.heading}
+              content={val?.content}
               key={index}
             />
           );

@@ -6,12 +6,13 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <Text
+        className={styles.typingtext}
         bgGradient="linear(to-l, #fff,#fff)"
         bgClip="text"
         fontSize="5xl"
         fontWeight="extrabold"
       >
-        Coding Ideas into Softwares
+        Coding Ideas into <span className={styles.changingtext}></span>
       </Text>
       <Box
         as="button"
